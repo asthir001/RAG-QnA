@@ -1,3 +1,14 @@
+---
+title: RAG Q&A
+emoji: 📚
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: 1.41.1
+app_file: app.py
+pinned: false
+---
+
 # Conversational RAG with PDF Uploads and Chat History
 
 This project is a sophisticated Retrieval-Augmented Generation (RAG) application that enables users to upload PDF documents and engage in context-aware conversations. Built with **LangChain**, **Groq (Llama 3.3)**, and **HuggingFace**, the system intelligently reformulates questions based on chat history to provide accurate, document-specific answers.
