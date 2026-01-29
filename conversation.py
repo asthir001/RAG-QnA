@@ -15,9 +15,8 @@ from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 import time
 
+#load env variables
 load_dotenv()
-
-
 os.environ['HUGGING_FACE'] = os.getenv('HUGGING_FACE')
 
 embeddings = HuggingFaceEmbeddings(model='all-MiniLM-L6-v2')
@@ -122,4 +121,5 @@ if uploaded_file:
 
         #st.write(st.session_state.store)
         st.write("Assistant:", response['answer'])
+
         #st.write("Chat History:", session_history.messages)
